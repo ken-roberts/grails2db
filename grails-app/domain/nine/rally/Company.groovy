@@ -13,4 +13,5 @@ class Company implements Serializable {
 	
 	Org            org
 	CompanyFlex    flex
+	CompanySetup   setup
 }
