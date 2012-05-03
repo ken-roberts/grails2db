@@ -16,11 +16,11 @@ class Contact {
 	String source
 	String sourceId
 
-	// References back to parent
-	ContactExt  ext
-	ContactFlex flex
-	Org         org
-	Long        orgType
+	ContactAddress address
+	ContactFlex    flex
+
+	Org            org
+	Long           orgType
 
     static constraints = {
     }
