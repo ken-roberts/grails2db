@@ -1,20 +1,18 @@
 package nine.rally
 
-@gorm.AuditStamp
+@gorm.AuditStamp @nine.CompanyClientStamp
 class Customer implements Serializable {
 	String  num
 	String  name
-	String  name2
-	String  description
-
-	Contact billTo
-	Contact shipTo
-
-	Long    clientId
-	Long    companyId
 	
-	Org            org
-	CustomerCalc   calc
+	String  name2
+	
+	Contact  billingContact 
+	Location billingAddress
+	String   billingEmail
+	
+	Org     org
+
 	CustomerExt    ext
 	CustomerFamily family
 	CustomerFlex   flex

@@ -9,7 +9,7 @@ class ContactAddress {
 	String lastName
 	String title
 	String salutation
-
+	
 	// Geographical location fields
 	String address1
 	String address2
@@ -21,7 +21,7 @@ class ContactAddress {
 	String country
 	String territory
 	String timeZone
-
+	
 	// TODO do we need these?
 	boolean inactive
 	//boolean isAdmin   // acl role check

@@ -1,18 +1,17 @@
 package nine.rally
 
-@gorm.AuditStamp
+@gorm.AuditStamp @nine.CompanyClientStamp
 class Prospect implements Serializable {
 	String  name
 	
 	String  description
 	boolean inactive
 
+    //this is the denormalized org contact until changed. changing it here will not change the Org 
 	Contact contact
-
-	Long    clientId
-	Long    companyId
 	
 	Org            org
+	
 	ProspectExt    ext
 	ProspectFlex   flex
 }

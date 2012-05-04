@@ -4,14 +4,11 @@ package nine.rally
 class Company implements Serializable {
 	String  num
 	String  name
-
 	String  description
-
-	Contact contact
 
 	Long    clientId
 	
 	Org            org
+	
 	CompanyFlex    flex
-	CompanySetup   setup
 }
